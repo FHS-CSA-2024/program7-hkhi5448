@@ -1,4 +1,3 @@
-
 //import stuff here
 import java.util.Scanner;
 //Your code here
@@ -30,13 +29,15 @@ public class Program7{
         
         
          //calculator
-        double klevinToBucks = (double) klevin / klevinPerBuck;
-        double nickelToKlevins = (double) nickel / nickelPerKlevin;
-        double nickelsToBucks = nickelToKlevins / klevinPerBuck;
-        double totalBucks = (double) bucks + klevinToBucks + nickelsToBucks;
+        double klevinsToBucks = (double) klevin / klevinPerBuck;
+        double nickelsToKlevins = (double) klevin / klevinPerBuck;
+        double nickelsToBucks = (double) nickelsToKlevins / klevinPerBuck;
+        double totalBucks = bucks + klevinsToBucks + nickelsToBucks;
         
         //final calculation
-        totalBucks =(int)(totalBucks * 100 + 0.5)/100.0;
+        totalBucks = (int) (totalBucks * 100 + 0.5)/100.0;
+        
+        
 
 
         System.out.println();
