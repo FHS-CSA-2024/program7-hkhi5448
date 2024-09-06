@@ -30,8 +30,8 @@ public class Program7{
         
          //calculator
         double klevinToBucks = (double) klevin / klevinPerBuck;
-        double nickelToKlevins = (double) nickel / nickelPerKlevin;
-        double nickelsToBucks = nickelToKlevins / nickelPerBuck;
+        double nickelsToBucks = nickel / nickelPerBuck;
+        
         double totalBucks = (double) bucks + klevinToBucks + nickelsToBucks;
         
         //final calculation
