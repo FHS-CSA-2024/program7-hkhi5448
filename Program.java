@@ -4,41 +4,29 @@ import java.util.Scanner;
 public class Program7{
     public static void main(String[] args){
         Scanner myScanner = new Scanner(System.in);
-        
         //initializing
         int bucks = 0;
         int klevin = 0;
-        int nickel = 0;
-        
+        int nickel = 0; 
         //conversion
         final int klevinPerBuck = 20;
         final int nickelPerKlevin = 12; 
-        final int nickelPerBuck = 100;
-        
+        final int nickelPerBuck = 100;  
         //user input
         System.out.print("Enter schrute-bucks: ");
-        bucks = myScanner.nextInt();
-        
+        bucks = myScanner.nextInt();  
         System.out.println();
         System.out.print("Enter klevins: ");
-        klevin = myScanner.nextInt();
-        
+        klevin = myScanner.nextInt(); 
         System.out.println();
         System.out.print("Enter stankley-nickels: ");
-        nickel = myScanner.nextInt();
-        
-        
+        nickel = myScanner.nextInt(); 
          //calculator
         double klevinToBucks = (double) klevin / klevinPerBuck;
-        double nickelsToBucks = nickel / nickelPerBuck;
-        
-        double totalBucks = (double) bucks + klevinToBucks + nickelsToBucks;
-        
+        double nickelsToBucks = nickel / nickelPerBuck; 
+        double totalBucks = (double) bucks + klevinToBucks + nickelsToBucks; 
         //final calculation
-        totalBucks =(int)(totalBucks * 100 + 0.5)/100.0;
-
-
-        System.out.println();
+        totalBucks = Math.round(totalBucks * 100)/100.0;
         System.out.println("Decimal schrute-bucks: " + totalBucks);
         
         
